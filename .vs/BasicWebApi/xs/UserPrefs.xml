@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{C2BC804B-9C94-4565-9C3A-6949AE4272F0}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BasicWebApi PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/HomeController.cs">
+    <Files>
+      <File FileName="Controllers/HomeController.cs" Line="406" Column="68" />
+      <File FileName="Model/BookModel.cs" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="13" Column="34" />
+      <File FileName="appsettings.json" Line="11" Column="14" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BasicWebApi" expanded="True">
+            <Node name="BasicWebApi" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
+              <Node name="Model" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
