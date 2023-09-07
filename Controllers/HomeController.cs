@@ -1,13 +1,9 @@
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 using BasicWebApi.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Tokens;
 using Npgsql;
 using JwtRegisteredClaimNames = Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames;
@@ -15,7 +11,7 @@ using JwtRegisteredClaimNames = Microsoft.IdentityModel.JsonWebTokens.JwtRegiste
 namespace BasicWebApi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class HomeController : ControllerBase
     {
         [HttpGet]
@@ -372,7 +368,7 @@ namespace BasicWebApi.Controllers
         }
 
         [HttpGet]
-        [Route("action")]
+        [Route("[action]")]
         public IActionResult GenerateToken(string username, string password)
         {
             try
@@ -404,6 +400,8 @@ namespace BasicWebApi.Controllers
                     var tokenHandler = new JwtSecurityTokenHandler();
                     var token = tokenHandler.CreateToken(tokenDescriptor);
                     var jwtTooken = tokenHandler.WriteToken(token);
+
+                    return Ok(new { token = jwtTooken });
                 }
 
                 return Unauthorized();
@@ -412,6 +410,14 @@ namespace BasicWebApi.Controllers
             {
                 return StatusCode(StatusCodes.Status501NotImplemented, new { message = ex.Message });
             }
+        }
+
+        [HttpGet]
+        [Route("[action]")]
+        [Authorize] // จะ authorziei  identity ก่อน ถึงจะเข้าได้
+        public IActionResult SayHello()
+        {
+            return Ok(new { message = "Hello" });
         }
 
     }

@@ -32,3 +32,10 @@
 /Users/thanakrittrakanjan/Documents/DotNet/BasicWebApi/obj/Debug/net7.0/BasicWebApi.genruntimeconfig.cache
 /Users/thanakrittrakanjan/Documents/DotNet/BasicWebApi/obj/Debug/net7.0/ref/BasicWebApi.dll
 /Users/thanakrittrakanjan/Documents/DotNet/BasicWebApi/bin/Debug/net7.0/Npgsql.dll
+/Users/thanakrittrakanjan/Documents/DotNet/BasicWebApi/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/thanakrittrakanjan/Documents/DotNet/BasicWebApi/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/thanakrittrakanjan/Documents/DotNet/BasicWebApi/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/thanakrittrakanjan/Documents/DotNet/BasicWebApi/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/thanakrittrakanjan/Documents/DotNet/BasicWebApi/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/thanakrittrakanjan/Documents/DotNet/BasicWebApi/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/thanakrittrakanjan/Documents/DotNet/BasicWebApi/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
