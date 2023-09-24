@@ -90,7 +90,7 @@ namespace BasicWebApi.Controllers
         }
 
         [HttpGet]
-        [Route("[action]")]
+        [Route("[action]/{id}")]
         public IActionResult Info(int id)
         {
             try
