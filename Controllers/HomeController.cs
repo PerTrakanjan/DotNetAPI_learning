@@ -131,7 +131,7 @@ namespace BasicWebApi.Controllers
 
         [HttpPost]
         [Route("[action]")]
-        public IActionResult edit(BookModel bookmodel)
+        public IActionResult Edit(BookModel bookmodel)
         {
             try
             {
